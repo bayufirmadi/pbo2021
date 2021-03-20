@@ -3,24 +3,35 @@
 
     class Dosen extends Pegawai
     {
-        public $nidn;
-        public $jabatan_akademis;
+        protected $nidn;
+        protected $jabatan_akademis;
 
-        function __construct($nip, $nama, $hp, $gaji, $nidn, $jabatan){
+	    public function setnidn($a){
+		$this->nidn = $a;
+	    }
+	    public function setjabatan_akademis($a){
+		$this->jabatan_akademis = $a;
+	    }
+
+	    public function getnidn() {
+		return $this->nidn; 
+	    }
+	    public function getjabatan_akademis() {
+		return $this->jabatan_akademis;
+	    }
+
+        function __construct($nip,$nama,$hp,$gp){
             $this->nip = $nip;
             $this->nama = $nama;
             $this->no_hp = $hp;
-            $this->gaji_pokok = $gaji;
-            $this->nidn = $nidn;
-            $this->jabatan_akademis = $jabatan;
+            $this->gaji_pokok = $gp;
         }
-
-        public function mengajar(){
-
+        function mengajar(){
         }
-        public function meneliti(){
-
+        function meneliti(){
         }
     }
+
     
 ?>
+
