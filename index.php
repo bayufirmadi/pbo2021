@@ -1,6 +1,8 @@
 <?php
-    require_once ("Mahasiswa.php");
-    require_once ("MahasiswaBaru.php");
+    require_once "initialize.php";
+    use application\backend\Mahasiswa;
+    use application\backend\MahasiswaBaru;
+
 
 
     $bayu = new Mahasiswa('H1101191035', 'Bayu firmadi', '2001-10-18', 'Pria');

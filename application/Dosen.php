@@ -1,4 +1,6 @@
 <?php
+
+    namespace application\backend;
     require_once("Pegawai.php");
 
     class Dosen extends Pegawai
@@ -27,8 +29,20 @@
             $this->gaji_pokok = $gp;
         }
         function mengajar(){
+            echo $this->nama . "sedang mengajar<br>";
         }
         function meneliti(){
+            echo $this->nama . "sedang meneliti<br>";
+        }
+    }
+
+    namespace application\frontend;
+
+    class Dosen
+    {
+        public function ucapan()
+        {
+            echo "terimakasih";
         }
     }
 

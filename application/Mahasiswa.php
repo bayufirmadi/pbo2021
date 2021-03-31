@@ -1,7 +1,9 @@
 <?php
+
+    namespace application\backend;
     require_once("User.php");
 
-    class Mahasiswa extends User{
+    class Mahasiswa {
         protected $nim;
         protected $nama;
         protected $tanggal_lahir;
