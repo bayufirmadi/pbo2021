@@ -8,6 +8,9 @@
         protected $nama;
         protected $tanggal_lahir;
         protected $jenis_kelamin;
+        public static $status= self::AKTIF;
+        const AKTIF = 1;
+        const NONAKTIF = 0;
     
         public function setnim($a){
             $this->nim= $a;
@@ -50,6 +53,17 @@
         }
         public function tampilkanNama(){
             echo $this->nama;
+        }
+        final public static function bergerak (){
+            $status = self::AKTIF;
+            echo " agen solusi, bukan agen perubahan <br>";
+        }
+         public function tuntaskan(){
+            self::bergerak();
+            echo "memperbaiki menjadi lenih baik";
+        }
+        public static function hitungsks($sks, $bobot){
+            return $sks * $bobot;
         }
     }
     
