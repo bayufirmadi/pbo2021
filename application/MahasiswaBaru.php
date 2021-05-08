@@ -1,6 +1,6 @@
 <?php 
-    namespace application\backend;
-    require_once("Mahasiswa.php");
+    namespace App;
+    require_once("vendor/autoload.php");
 
     class MahasiswaBaru extends Mahasiswa
     {

@@ -1,7 +1,8 @@
 <?php
 
-	namespace application\backend;
-    require_once("User.php");
+	namespace App;
+	require_once("vendor/autoload.php");
+
 
     class Pegawai extends User
     {

@@ -1,5 +1,7 @@
 <?php
-    namespace application\backend;
+    namespace App;
+    
+
 
     class Mobil
     {

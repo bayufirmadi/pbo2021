@@ -1,8 +1,8 @@
 <?php
 
-require('initialize.php');
+require("vendor/autoload.php");
 
-use application\backend\Mahasiswa;
+use App\Mahasiswa;
 
 $bayu = new Mahasiswa('H1101191047','bayu firmadia','10-18-2001','laki-laki' ); 
 

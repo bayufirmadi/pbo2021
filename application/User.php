@@ -1,6 +1,7 @@
 <?php
 
-	namespace application\backend;
+	namespace App;
+    
     class User
     {
         protected $username;

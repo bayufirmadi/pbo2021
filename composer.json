@@ -1,0 +1,16 @@
+{
+    "name": "hp/pbo2021",
+    "description": "Praktikum PBO",
+    "authors": [
+        {
+            "name": "bayufirmadi",
+            "email": "bayufirmadi18@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\" : "application"
+        }
+    }
+}

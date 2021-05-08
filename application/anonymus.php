@@ -1,5 +1,4 @@
-<? php
-
+<?php 
 //CONTOH PENGUNAAN ANONYMUS FUNCION
 
     $jml = function($a, $b) {
